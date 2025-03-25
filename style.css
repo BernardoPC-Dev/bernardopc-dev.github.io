@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.lang {
+    border: #fff 3px solid;
+    border-radius: 20px;
+    width: calc(33% - 6px);
+    position: relative;
+}
+.prog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.text-lang {
+    margin: 10px;
+}
+.lang img {
+    margin: 10px;
+    border-radius: 10px;
+}
