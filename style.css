@@ -14,6 +14,13 @@ body {
     border-radius: 20px;
     width: calc(33% - 6px);
     position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.lang.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 #prog, #cris {
     display: flex;
