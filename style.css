@@ -42,7 +42,7 @@ body {
     border-radius: 50%;
     display: block;
     margin: auto;
-    animation: spin 2s ease-in-out infinite;
+    animation: spin 2.5s ease-in-out infinite;
 }
 @media (prefers-reduced-motion: reduce) {
     .profilePic {

@@ -1,0 +1,23 @@
+{
+  "name": "bernardopc-dev.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "homepage": "https://github.com/BernardoPC-Dev/bernardopc-dev.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/BernardoPC-Dev/bernardopc-dev.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoPC-Dev/bernardopc-dev.github.io.git"
+  },
+  "license": "MIT",
+  "author": "Bernardo Botto",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "run"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  }
+}
