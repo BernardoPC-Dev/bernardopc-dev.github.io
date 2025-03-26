@@ -9,7 +9,7 @@ document.addEventListener('scroll', function () {
   
     boxes.forEach(function (box) {
       const boxPosition = box.getBoundingClientRect().top; // posição da caixa em relação ao topo da tela
-      const screenPosition = window.innerHeight / 1.3; // onde a caixa vai aparecer (ajuste conforme necessário)
+      const screenPosition = window.innerHeight / 1; // onde a caixa vai aparecer (ajuste conforme necessário)
   
       if (boxPosition < screenPosition) {
         box.classList.add('visible');
