@@ -9,23 +9,42 @@ body {
     font-weight: bold;
     margin: 20px;
 }
+.header {
+    text-align: center;
+}
+.title {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.title img {
+    height: 40px;
+    position: absolute;
+    margin-left: 8px;
+}
 .lang {
-    border: #fff 3px solid;
     border-radius: 20px;
     width: calc(33% - 6px);
     position: relative;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 3px 1px black;
 }
 .lang.visible {
     opacity: 1;
     transform: translateY(0);
 }
+.lang:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
 #prog, #cris {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
 }
 .text-lang {
@@ -54,5 +73,15 @@ body {
 @media (prefers-reduced-motion: reduce) {
     .profilePic {
         animation: none;
+    }
+}
+@media (max-width: 768px) {
+    .lang {
+        width: calc(50% - 6px);
+    }
+}
+@media (max-width: 480px) {
+    .lang {
+        width: 100%;
     }
 }
