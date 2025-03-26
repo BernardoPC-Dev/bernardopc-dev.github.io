@@ -18,7 +18,7 @@ body {
 #prog, #cris {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
 }
 .text-lang {
@@ -43,4 +43,9 @@ body {
     display: block;
     margin: auto;
     animation: spin 2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+    .profilePic {
+        animation: none;
+    }
 }
