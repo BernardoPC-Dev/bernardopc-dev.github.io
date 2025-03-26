@@ -14,7 +14,7 @@ body {
     width: calc(33% - 6px);
     position: relative;
 }
-.prog {
+#prog, #cris {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -26,4 +26,20 @@ body {
 .lang img {
     margin: 10px;
     border-radius: 10px;
+}
+
+@keyframes spin {
+    0%,
+    100% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+.profilePic {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    animation: spin 2s ease-in-out infinite;
 }

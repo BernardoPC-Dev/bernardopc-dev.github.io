@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="header">
-            <img src="https://github.com/bernardopc-dev.png" style="border-radius: 50%; display: block; margin: auto;" height="190px">
+            <img src="https://github.com/bernardopc-dev.png" class="profilePic" height="190px">
             <h1 style="text-align: center;" contenteditable="true">BernaBotto</h1>
             <h2 style="text-align: center; margin: 7px;">
                 <img src="img/br-flag.png" height="40px">N
@@ -20,13 +20,13 @@
             </h2>
         </div>
         <div style="text-align: center;">
-            Programador desde 2020 - 
-            Cristão desde 2021 - 
-            Concurseiro desde 2024
+            <span onclick="goToProg()" style="cursor: pointer;">Programador desde 2020</span> - 
+            <span onclick="goToCris()" style="cursor: pointer;">Cristão desde 2021</span> - 
+            <span onclick="goToConc()" style="cursor: pointer;"></span>Concurseiro desde 2024</span>
         </div>
     </header>
     <h1 style="text-align: center;">Parte 1: Programador</h1>
-    <div class="prog">
+    <div id="prog">
 
         <div class="lang" style="background-color: #FF5733;">
             <img src="img/html-logo.png" height="50px">
@@ -69,5 +69,24 @@
             <div class="text-lang">Aprendendo, sem capacidades.</div>
         </div>
     </div>
+    <h1 style="text-align: center;">Parte 2: Cristão</h1>
+    <div id="cris">
+        <div class="lang" style="background-color: #161616; color: #fff;">
+            <img src="img/rl-logo.png" height="50px">
+            Rede Livre - 3 anos<br>
+            <div class="text-lang">Servo da multimídia, do teatro e líder de discipulado.</div>
+        </div>
+        <div class="lang" style="background-color: #006eff; color: #fff;">
+            <img src="img/rj-logo.png" height="50px">
+            Rede Jump - 3 anos<br>
+            <div class="text-lang">Líder da multimídia e facilitador.</div>
+        </div>
+        <div class="lang" style="background-color: #f5ca30;">
+            <img src="img/vc-logo.png" height="50px">
+            Vida em Cena - 2 anos<br>
+            <div class="text-lang">Participei de 5 peças, incluindo a Páscoa 2024.</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
