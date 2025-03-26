@@ -18,10 +18,10 @@ body {
     justify-content: center;
     text-align: center;
 }
-.title img {
-    height: 40px;
-    position: absolute;
-    margin-left: 8px;
+a {
+    color: black;
+    font-weight: normal;
+    font-style: normal;
 }
 .lang {
     border-radius: 20px;
