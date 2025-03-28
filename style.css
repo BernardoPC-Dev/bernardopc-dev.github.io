@@ -9,20 +9,43 @@ body {
     font-weight: bold;
     margin: 20px;
 }
-.header {
+
+/* Header */
+
+header {
     text-align: center;
-}
-.title {
-    display: flex;
     margin: auto;
+    gap: 15%;
+    margin-bottom: 50px;
+}
+h2 {
+    display: flex;
     justify-content: center;
-    text-align: center;
 }
-a {
-    color: black;
-    font-weight: normal;
-    font-style: normal;
+h2 img {
+    margin-right: 10px;
+    margin-left: 10px;
 }
+.socialMedias {
+    height: 40px;
+    margin-top: 15px;
+}
+@keyframes spin2 {
+    0%,
+    100% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+.profilePic {
+    border-radius: 50%;
+    animation: spin2 2.5s ease-in-out infinite;
+}
+
+/* Corpo */
+
 .lang {
     border-radius: 20px;
     width: calc(33% - 6px);
@@ -47,26 +70,17 @@ section {
     gap: 10px;
     justify-content: center;
 }
+.secTitle {
+    text-align: center;
+    margin: 25px;
+}
 .lang img {
     margin: 10px;
     border-radius: 10px;
 }
 
-@keyframes spin2 {
-    0%,
-    100% {
-        transform: rotate(-10deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-}
-.profilePic {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    animation: spin2 2.5s ease-in-out infinite;
-}
+/* Media Queries */
+
 @media (prefers-reduced-motion: reduce) {
     .profilePic {
         animation: none;
