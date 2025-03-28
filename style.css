@@ -41,21 +41,18 @@ a {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
-#prog, #cris {
+section {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-}
-.text-lang {
-    margin: 10px;
 }
 .lang img {
     margin: 10px;
     border-radius: 10px;
 }
 
-@keyframes spin {
+@keyframes spin2 {
     0%,
     100% {
         transform: rotate(-10deg);
@@ -68,7 +65,7 @@ a {
     border-radius: 50%;
     display: block;
     margin: auto;
-    animation: spin 2.5s ease-in-out infinite;
+    animation: spin2 2.5s ease-in-out infinite;
 }
 @media (prefers-reduced-motion: reduce) {
     .profilePic {
